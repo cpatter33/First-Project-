@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My first project</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 20px;
+                line-height: 1.6;
+                color: #222;
+                background: #f9f9f9;
+            }
+            header, section {
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+                margin-bottom: 20px;
+                padding: 20px;
+            }
+            h1, h2 {
+                margin-top: 0;
+            }
+            ul {
+                list-style: disc inside;
+                margin: 10px 0 0 0;
+                padding-left: 20px;
+            }
+            .project-item {
+                margin-bottom: 12px;
+            }
+            .contact-list {
+                list-style: none;
+                padding: 0;
+            }
+            .contact-list li {
+                margin-bottom: 8px;
+            }
+        </style>
     </head>
     <body>
-        <h1> Colby Patterson</h1>
-        <p>Starting my coding journey.</p>
+        <header>
+            <h1>Colby Patterson</h1>
+            <p>Starting my coding journey.</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm Colby, learning web development and building simple projects while growing my skills. I enjoy problem solving, designing user-friendly pages, and discovering new technologies.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML &amp; CSS</li>
+                <li>Basic JavaScript</li>
+                <li>Responsive design</li>
+                <li>Project planning</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Personal Portfolio Page</h3>
+                <p>A simple page to introduce myself and show my projects, built with HTML and CSS.</p>
+            </div>
+            <div class="project-item">
+                <h3>Learning Journal</h3>
+                <p>A small project that helps track coding progress and ideas while practicing layout and content structure.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to connect or collaborate, reach out through one of the options below:</p>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:example@example.com">example@example.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">linkedin.com</a></li>
+            </ul>
+        </section>
     </body>
 </html>
