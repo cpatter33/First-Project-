@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Workout & Calorie Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Workout & Calorie Tracker</h1>
+        <P> Start here by adding workouts items and food entries.</P>
+    </header>
+
+    <main>
+        <section id="workout">
+            <h2>Workout Tracker</h2>
+            <p> Add exercise,sets, and reps.</p>
+            <div class="form-row">
+            <input type="text" id="exercise-name" placeholder="exercise name">
+            <input type="number" id="exercise-set" placeholder="exercise set" min="1">
+            <input type="number" id="exercise-rep" placeholder="exercise rep" min="1">
+            <input type="number" id="miles-ran" placeholder="miles ran" min="0">
+            <button id="add-workout">Add workout</button>          
+            </div>
+            <div class="tracker-card">
+                <h3>workout list</h3>
+                <ul id="workout-list"></ul>
+            </div>
+        </section>
+
+        <section id="calories">
+            <h2> Calorie Tracker</h2>
+             <p> Log foods and see the total calories consumed</p>
+             <div class="form-row">
+                <input type="text" id="food-name" placeholder="Food or meal">
+                <input type="number" id="food-calories" placeholder="Calories" min="0">
+                <button id="add-food">Add meal</button>
+             </div>
+             <div class="tracker-card">
+                <h3>Food list</h3>
+                <ul id="calorie-list"></ul>
+                <p>Total calories: <span id="calorie-total">0</span></p>
+             </div>   
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
